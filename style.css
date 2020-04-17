@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Neucha|Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap"');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neucha', cursive;
+    scroll-behavior: smooth;
+}
+
+/* root */
+:root {
+	--blue: #6ae1ff;
+	--orange: #ffb340;
+}
+
+/* nav-bar */
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    z-index: 11;
+}
+
+nav a:hover{
+    color: var(--blue);
+    transition: .3s;
+}
+
+h3 {
+    font-family: 'Girasso';
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-shadow: black 0 0 20px;
+}
+
+.logo {
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--orange);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: var(--blue);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1390px) {
+    .nav-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:974px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    h3 {
+       font-size: 70px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* section */
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#333,#223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+/* section one */
+
+
+/* section two */
