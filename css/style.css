@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Neucha|Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap"');
+@import url('media.css');
+@import url('card.css');
+@import url('nav.css');
+@import url('section3.css');
+@import url('button_modal.css');
+
+/* ALL SETINGS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neucha', cursive;
+    scroll-behavior: smooth;
+}
+
+
+/* ALL section */
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#333,#223);
+    display: flex;
+}
+
+/* ROOT */
+
+:root {
+	--blue: #98e0dc;
+    --pink: #f559a2;
+    --blue2: #b8dde8;
+    --yellow: #fdef13;
+    --purple: #9051a0;
+}
+

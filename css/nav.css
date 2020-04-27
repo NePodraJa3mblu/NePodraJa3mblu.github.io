@@ -1,0 +1,75 @@
+/* nav-bar */
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    z-index: 9999;
+}
+
+nav a:hover{
+    color: var(--blue);
+    transition: .3s;
+}
+
+.logo h1{
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--pink);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.seven_btn {
+    font-family: 'Neucha', cursive;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--blue);
+    background-color: black;
+    border: solid 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.seven_btn:hover {
+    color: var(--pink);
+    transition: 0.3s;
+}

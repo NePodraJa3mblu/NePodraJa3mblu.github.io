@@ -1,0 +1,20 @@
+.three {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.all__card {
+    display: flex;
+    justify-content: center;
+}
+
+.three .h1__game h1{
+    width: 100%;
+    height: 8vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow);
+}
